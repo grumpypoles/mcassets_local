@@ -46,17 +46,17 @@ const Page = () => {
 
 
   const handleDelete = () => {
-    // if (confirm("Are you sure you want to delete this record?")) {
-    //   startTransition(async () => {
-    //     try {
-    //       await delete_item(equipmentData);
-    //       alert("Item deleted successfully!");
-    //       revalidatePath("/hiassets");
-    //     } catch (error) {
-    //       alert("Error deleting item. Please try again.");
-    //     }
-    //   });
-    // }
+    if (confirm("Are you sure you want to delete this record?")) {
+      startTransition(async () => {
+        try {
+          await delete_item(equipmentData);
+          alert("Item deleted successfully!");
+          revalidatePath("/hiassets");
+        } catch (error) {
+          alert("Error deleting item. Please try again.");
+        }
+      });
+    }
   };
 
   return (
@@ -67,7 +67,7 @@ const Page = () => {
         </Link>
         <button
           title="Delete Item"
-          // onClick={handleDelete}
+          onClick={handleDelete}
           disabled={isPending}
           className="flex items-center text-2xl font-semibold text-primary-300"
         >

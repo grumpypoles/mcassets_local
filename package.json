@@ -1,5 +1,5 @@
 {
-  "name": "mcassets",
+  "name": "mcassets_local",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,8 +17,6 @@
     "ag-charts-react": "^10.1.0",
     "ag-grid-react": "^32.0.2",
     "date-fns": "^3.6.0",
-    "mongodb": "^6.12.0",
-    "mongoose": "^8.9.3",
     "next": "^14.2.22",
     "next-auth": "^5.0.0-beta.20",
     "react-day-picker": "^8.10.1",
